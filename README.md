@@ -10,6 +10,7 @@ A robust and efficient trading platform that allows users to buy and sell stocks
 
 ## Table of Contents
 
+- [Endpoints](#Endpoints)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
@@ -25,6 +26,24 @@ A robust and efficient trading platform that allows users to buy and sell stocks
 - Admins can add new stocks to the platform
 - Charts are available to visualize stock prices over time
 - Flask endpoints have been thoroughly tested
+
+## Endpoints
+
+- `GET /`: displays the home page
+- `GET /login`: displays the login page
+- `POST /login`: logs in the user
+- `GET /register`: displays the registration page
+- `POST /register`: registers the user
+- `GET /logout`: logs out the user
+- `GET /stocks`: displays a list of all available stocks
+- `GET /stocks/<stock_id>`: displays detailed information about a specific stock
+- `POST /buy`: allows the user to buy a stock
+- `POST /sell`: allows the user to sell a stock
+- `GET /orderbook`: displays the order book
+- `GET /chart/<stock_id>`: displays a chart of the price history for a specific stock
+- `GET /admin`: displays the admin dashboard (requires admin login)
+- `POST /admin/add_stock`: adds a new stock to the platform (requires admin login)
+
 
 ## Installation
 
